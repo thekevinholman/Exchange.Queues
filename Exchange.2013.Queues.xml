@@ -13,7 +13,7 @@
       </Reference>
       <Reference Alias="MSDL">
         <ID>Microsoft.SystemCenter.DataWarehouse.Library</ID>
-        <Version>10.19.10050.0</Version>
+        <Version>7.1.10226.0</Version>
         <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
       </Reference>
       <Reference Alias="Windows">
@@ -23,12 +23,12 @@
       </Reference>
       <Reference Alias="Performance">
         <ID>System.Performance.Library</ID>
-        <Version>7.0.8443.6</Version>
+        <Version>7.0.8433.0</Version>
         <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
       </Reference>
       <Reference Alias="MSVL">
         <ID>Microsoft.SystemCenter.Visualization.Library</ID>
-        <Version>10.19.10050.0</Version>
+        <Version>7.1.10226.0</Version>
         <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
       </Reference>
       <Reference Alias="MSIL">
@@ -38,7 +38,7 @@
       </Reference>
       <Reference Alias="MSVCL">
         <ID>Microsoft.SystemCenter.Visualization.Component.Library</ID>
-        <Version>10.19.10050.0</Version>
+        <Version>7.1.10226.0</Version>
         <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
       </Reference>
       <Reference Alias="System">
@@ -48,12 +48,12 @@
       </Reference>
       <Reference Alias="SC">
         <ID>Microsoft.SystemCenter.Library</ID>
-        <Version>7.0.8448.6</Version>
+        <Version>7.0.8433.0</Version>
         <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
       </Reference>
       <Reference Alias="Health">
         <ID>System.Health.Library</ID>
-        <Version>7.0.8443.6</Version>
+        <Version>7.0.8433.0</Version>
         <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
       </Reference>
     </References>
@@ -450,7 +450,7 @@ $momapi.LogScriptEvent($ScriptName,$EventID,0,"`nScript Completed. `nRuntime: ($
           <InstanceName>_Total</InstanceName>
           <AllInstances>false</AllInstances>
           <Frequency>60</Frequency>
-          <Threshold>100</Threshold>
+          <Threshold>5000</Threshold>
           <Direction>greater</Direction>
           <NumSamples>2</NumSamples>
         </Configuration>
@@ -504,7 +504,7 @@ $momapi.LogScriptEvent($ScriptName,$EventID,0,"`nScript Completed. `nRuntime: ($
           <InstanceName>_Total</InstanceName>
           <AllInstances>false</AllInstances>
           <Frequency>60</Frequency>
-          <Threshold>100</Threshold>
+          <Threshold>5000</Threshold>
           <Direction>greater</Direction>
           <NumSamples>2</NumSamples>
         </Configuration>
@@ -531,7 +531,7 @@ $momapi.LogScriptEvent($ScriptName,$EventID,0,"`nScript Completed. `nRuntime: ($
           <InstanceName>_Total</InstanceName>
           <AllInstances>false</AllInstances>
           <Frequency>60</Frequency>
-          <Threshold>100</Threshold>
+          <Threshold>5000</Threshold>
           <Direction>greater</Direction>
           <NumSamples>2</NumSamples>
         </Configuration>
@@ -558,7 +558,7 @@ $momapi.LogScriptEvent($ScriptName,$EventID,0,"`nScript Completed. `nRuntime: ($
           <InstanceName>_Total</InstanceName>
           <AllInstances>false</AllInstances>
           <Frequency>60</Frequency>
-          <Threshold>75</Threshold>
+          <Threshold>5000</Threshold>
           <Direction>greater</Direction>
           <NumSamples>2</NumSamples>
         </Configuration>
@@ -585,7 +585,7 @@ $momapi.LogScriptEvent($ScriptName,$EventID,0,"`nScript Completed. `nRuntime: ($
           <InstanceName>_Total</InstanceName>
           <AllInstances>false</AllInstances>
           <Frequency>60</Frequency>
-          <Threshold>100</Threshold>
+          <Threshold>5000</Threshold>
           <Direction>greater</Direction>
           <NumSamples>2</NumSamples>
         </Configuration>
@@ -612,7 +612,7 @@ $momapi.LogScriptEvent($ScriptName,$EventID,0,"`nScript Completed. `nRuntime: ($
           <InstanceName>_Total</InstanceName>
           <AllInstances>false</AllInstances>
           <Frequency>60</Frequency>
-          <Threshold>100</Threshold>
+          <Threshold>5000</Threshold>
           <Direction>greater</Direction>
           <NumSamples>2</NumSamples>
         </Configuration>
@@ -863,10 +863,7 @@ Last Sampled Value: ({0})</Description>
           <Name>Too many Items in Exchange Submission Queue</Name>
           <Description>Too many Items in Exchange Submission Queue
 
-Last Sampled Value: ({0})
-
-
-</Description>
+Last Sampled Value: ({0})</Description>
         </DisplayString>
         <DisplayString ElementID="Exchange.2013.Queues.SubmissionQueueLength.Monitor" SubElementID="ConditionFalse">
           <Name>ConditionFalse</Name>
@@ -917,7 +914,6 @@ Last Sampled Value: ({0})</Description>
         </DisplayString>
         <DisplayString ElementID="Exchange.2013.Queues.Server.Performance.View">
           <Name>Queue Performance</Name>
-          <Description />
         </DisplayString>
       </DisplayStrings>
     </LanguagePack>
