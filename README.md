@@ -1,8 +1,8 @@
-# Exchange.2013.Queues 15.0.669.22
+# Exchange.Queues 15.0.669.22
 
-## [Download Here][Download 15.0.669.22]
+## [Download Here][Download]
 
-[Download 15.0.669.22]: https://github.com/thekevinholman/Exchange.2013.Queues/releases/download/15.0.669.22/Exchange.2013.Queues.mp
+[Download]: https://github.com/thekevinholman/Exchange.Queues/releases/download/15.0.669.22/Exchange.Queues.mp
 
 ### Management Pack to Monitor Exchange Queues on Exchange 2013 and later
 
