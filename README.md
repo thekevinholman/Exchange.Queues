@@ -19,3 +19,6 @@ The monitor thresholds are all set to 5000 queue items by default, and will need
 * Retry Mailbox Delivery Queue Length
 * Submission Queue Length
 * Unreachable Queue Length
+
+15.0.669.22 - Initial release
+15.0.669.23 - Fixed bug in Queue server discovery
