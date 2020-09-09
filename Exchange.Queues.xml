@@ -2,7 +2,7 @@
   <Manifest>
     <Identity>
       <ID>Exchange.Queues</ID>
-      <Version>15.0.669.22</Version>
+      <Version>15.0.669.23</Version>
     </Identity>
     <Name>Exchange.Queues</Name>
     <References>
@@ -87,7 +87,7 @@
 #  Exchange 2013 (and later) Queue Server Role Discovery Script
 #
 #  Author: Kevin Holman
-#  v1.0
+#  v1.1
 #=================================================================================
 param($SourceId,$ManagedEntityId,[string]$ComputerName,[string]$MGName,[string]$ExchServerName)
 
@@ -139,7 +139,7 @@ IF (!(Get-PSSnapin Microsoft.Exchange.Management.PowerShell.E2010 -ErrorAction:S
 }
 
 # Get the Exchange Server object
-$ExchangeServerObj = Get-ExchangeServer -Identity "EXCH1.opsmgr.net"
+$ExchangeServerObj = Get-ExchangeServer -Identity $ExchServerName
 IF ($ExchangeServerObj -eq $null)
 {
   $momapi.LogScriptEvent($ScriptName,$EventID,1,"`nFATAL ERROR - cannot get Exchange Server object via PowerShell. `nTerminating Script. `nError is ($Error).")
